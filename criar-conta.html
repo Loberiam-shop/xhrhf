@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Conta - Loberiam Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <p>Frete grátis para compras acima de R$ 199,90 - Aproveite! | 10% OFF na primeira compra com o cupom: BEMVINDO10</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="assets/images/interface/logo.png" alt="Loberiam Shop" class="logo">
+                    <span class="site-name">Loberiam Shop</span>
+                </a>
+            </div>
+            
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="O que você está procurando?">
+                <button class="search-button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            
+            <div class="user-actions">
+                <a href="minha-conta.html" class="user-action">
+                    <i class="fas fa-user"></i>
+                    <span>Minha Conta</span>
+                </a>
+                <a href="favoritos.html" class="user-action">
+                    <i class="fas fa-heart"></i>
+                    <span>Favoritos</span>
+                </a>
+                <a href="carrinho.html" class="user-action">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Carrinho</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="nav-main">
+        <div class="container nav-container">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="categorias.html" class="nav-link">Categorias</a>
+                </li>
+                <li class="nav-item">
+                    <a href="ofertas.html" class="nav-link">Ofertas</a>
+                </li>
+                <li class="nav-item">
+                    <a href="lancamentos.html" class="nav-link">Lançamentos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="mais-vendidos.html" class="nav-link">Mais Vendidos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="quem-somos.html" class="nav-link">Quem Somos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contato.html" class="nav-link">Contato</a>
+                </li>
+            </ul>
+            <a href="super-ofertas.html" class="super-offers">SUPER OFERTAS</a>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="container" style="margin-top: 20px;">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Criar Conta</li>
+            </ol>
+        </nav>
+    </div>
+
+    <!-- Create Account Section -->
+    <section class="account-page">
+        <div class="container">
+            <div class="auth-container">
+                <div class="auth-image">
+                    <div>
+                        <h2>Bem-vindo à Loberiam Shop</h2>
+                        <p>Crie sua conta e aproveite todos os benefícios exclusivos para clientes cadastrados:</p>
+                        <ul style="text-align: left; margin-bottom: 30px;">
+                            <li><i class="fas fa-check-circle" style="margin-right: 10px;"></i> Acompanhe seus pedidos</li>
+                            <li><i class="fas fa-check-circle" style="margin-right: 10px;"></i> Salve seus endereços</li>
+                            <li><i class="fas fa-check-circle" style="margin-right: 10px;"></i> Receba ofertas exclusivas</li>
+                            <li><i class="fas fa-check-circle" style="margin-right: 10px;"></i> Compre mais rápido</li>
+                            <li><i class="fas fa-check-circle" style="margin-right: 10px;"></i> Adicione produtos aos favoritos</li>
+                        </ul>
+                        <p>Já tem uma conta?</p>
+                        <a href="login.html" class="btn btn-outline" style="background-color: transparent; border-color: white; color: white;">Fazer Login</a>
+                    </div>
+                </div>
+                
+                <div class="auth-form">
+                    <h2 class="auth-title">Criar Conta</h2>
+                    
+                    <div class="social-login">
+                        <div class="social-buttons">
+                            <button class="social-button">
+                                <i class="fab fa-google"></i>
+                                Google
+                            </button>
+                            <button class="social-button">
+                                <i class="fab fa-facebook-f"></i>
+                                Facebook
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="divider">
+                        <span>ou</span>
+                    </div>
+                    
+                    <form id="register-form">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Nome Completo*</label>
+                            <input type="text" id="name" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-col">
+                                <div class="form-group">
+                                    <label for="email" class="form-label">E-mail*</label>
+                                    <input type="email" id="email" class="form-input" required>
+                                </div>
+                            </div>
+                            <div class="form-col">
+                                <div class="form-group">
+                                    <label for="cpf" class="form-label">CPF*</label>
+                                    <input type="text" id="cpf" class="form-input" placeholder="000.000.000-00" required>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-col">
+                                <div class="form-group">
+                                    <label for="phone" class="form-label">Telefone*</label>
+                                    <input type="tel" id="phone" class="form-input" placeholder="(00) 00000-0000" required>
+                                </div>
+                            </div>
+                            <div class="form-col">
+                                <div class="form-group">
+                                    <label for="birth" class="form-label">Data de Nascimento</label>
+                                    <input type="date" id="birth" class="form-input">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-col">
+                                <div class="form-group">
+                                    <label for="password" class="form-label">Senha*</label>
+                                    <div style="position: relative;">
+                                        <input type="password" id="password" class="form-input" required>
+                                        <i class="fas fa-eye" id="toggle-password" style="position: absolute; right: 15px; top: 50%; transform: translateY(-50%); cursor: pointer; color: #757575;"></i>
+                                    </div>
+                                    <div class="password-strength" style="margin-top: 10px;">
+                                        <div class="strength-meter" style="display: flex; gap: 5px; margin-bottom: 5px;">
+                                            <span style="height: 5px; flex: 1; background-color: #e0e0e0; border-radius: 2px;"></span>
+                                            <span style="height: 5px; flex: 1; background-color: #e0e0e0; border-radius: 2px;"></span>
+                                            <span style="height: 5px; flex: 1; background-color: #e0e0e0; border-radius: 2px;"></span>
+                                            <span style="height: 5px; flex: 1; background-color: #e0e0e0; border-radius: 2px;"></span>
+                                        </div>
+                                        <p style="font-size: 12px; color: #757575;">Sua senha deve conter pelo menos 8 caracteres, incluindo letras maiúsculas, minúsculas e números</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-col">
+                                <div class="form-group">
+                                    <label for="confirm-password" class="form-label">Confirmar Senha*</label>
+                                    <input type="password" id="confirm-password" class="form-input" required>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" required> Concordo com os <a href="politicas/termos-condicoes.html" target="_blank">Termos e Condições</a> e <a href="politicas/privacidade.html" target="_blank">Política de Privacidade</a>*
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" checked> Desejo receber ofertas e novidades por e-mail
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox"> Desejo receber ofertas por WhatsApp
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="submit" class="btn" style="width: 100%;">Criar Conta</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container newsletter-content">
+            <h2 class="newsletter-title">Receba Nossas Ofertas</h2>
+            <p class="newsletter-description">Cadastre-se para receber ofertas exclusivas e novidades em primeira mão</p>
+            <form class="newsletter-form">
+                <input type="email" class="newsletter-input" placeholder="Seu melhor e-mail">
+                <button type="submit" class="newsletter-button">Cadastrar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3 class="footer-column-title">Institucional</h3>
+                    <div class="footer-links">
+                        <a href="quem-somos.html" class="footer-link">Quem Somos</a>
+                        <a href="politicas/termos-condicoes.html" class="footer-link">Termos e Condições</a>
+                        <a href="politicas/privacidade.html" class="footer-link">Política de Privacidade</a>
+                        <a href="politicas/trocas-devolucoes.html" class="footer-link">Trocas e Devoluções</a>
+                        <a href="trabalhe-conosco.html" class="footer-link">Trabalhe Conosco</a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-column-title">Atendimento</h3>
+                    <div class="footer-links">
+                        <a href="contato.html" class="footer-link">Fale Conosco</a>
+                        <a href="central-ajuda.html" class="footer-link">Central de Ajuda</a>
+                        <a href="duvidas-frequentes.html" class="footer-link">Dúvidas Frequentes</a>
+                        <a href="acompanhe-pedido.html" class="footer-link">Acompanhe seu Pedido</a>
+                        <a href="politicas/formas-pagamento.html" class="footer-link">Formas de Pagamento</a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-column-title">Categorias</h3>
+                    <div class="footer-links">
+                        <a href="categorias/eletronicos.html" class="footer-link">Eletrônicos</a>
+                        <a href="categorias/moda.html" class="footer-link">Moda</a>
+                        <a href="categorias/casa-decoracao.html" class="footer-link">Casa e Decoração</a>
+                        <a href="categorias/esportes.html" class="footer-link">Esportes</a>
+                        <a href="categorias/beleza-saude.html" class="footer-link">Beleza e Saúde</a>
+                        <a href="categorias/infantil.html" class="footer-link">Infantil</a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-column-title">Redes Sociais</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                    
+                    <h3 class="footer-column-title" style="margin-top: 20px;">Formas de Pagamento</h3>
+                    <div class="payment-methods">
+                        <img src="assets/images/payment/visa.png" alt="Visa" class="payment-method">
+                        <img src="assets/images/payment/mastercard.png" alt="Mastercard" class="payment-method">
+                        <img src="assets/images/payment/amex.png" alt="American Express" class="payment-method">
+                        <img src="assets/images/payment/elo.png" alt="Elo" class="payment-method">
+                        <img src="assets/images/payment/boleto.png" alt="Boleto" class="payment-method">
+                        <img src="assets/images/payment/pix.png" alt="Pix" class="payment-method">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Loberiam Shop - Todos os direitos reservados</p>
+                <div class="footer-bottom-links">
+                    <img src="assets/images/security/ssl.png" alt="Site Seguro SSL" style="height: 30px; margin: 0 10px;">
+                    <img src="assets/images/security/secure.png" alt="Compra Protegida" style="height: 30px; margin: 0 10px;">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle password visibility
+        document.getElementById('toggle-password').addEventListener('click', function() {
+            const passwordInput = document.getElementById('password');
+            const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+            passwordInput.setAttribute('type', type);
+            this.classList.toggle('fa-eye');
+            this.classList.toggle('fa-eye-slash');
+        });
+
+        // Password strength meter
+        document.getElementById('password').addEventListener('input', function() {
+            const password = this.value;
+            const strengthBars = document.querySelectorAll('.strength-meter span');
+            
+            // Reset all bars
+            strengthBars.forEach(bar => {
+                bar.style.backgroundColor = '#e0e0e0';
+            });
+            
+            // Check strength
+            let strength = 0;
+            
+            if (password.length >= 8) strength++;
+            if (/[A-Z]/.test(password)) strength++;
+            if (/[0-9]/.test(password)) strength++;
+            if (/[^A-Za-z0-9]/.test(password)) strength++;
+            
+            // Update bars
+            for (let i = 0; i < strength; i++) {
+                if (strength === 1) {
+                    strengthBars[i].style.backgroundColor = '#f44336'; // Weak
+                } else if (strength === 2) {
+                    strengthBars[i].style.backgroundColor = '#ff9800'; // Medium
+                } else if (strength === 3) {
+                    strengthBars[i].style.backgroundColor = '#2196f3'; // Strong
+                } else if (strength === 4) {
+                    strengthBars[i].style.backgroundColor = '#4caf50'; // Very strong
+                }
+            }
+        });
+
+        // Form validation
+        document.getElementById('register-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const cpf = document.getElementById('cpf').value;
+            const phone = document.getElementById('phone').value;
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirm-password').value;
+            
+            let isValid = true;
+            
+            // Simple validation
+            if (!name || !email || !cpf || !phone || !password || !confirmPassword) {
+                alert('Por favor, preencha todos os campos obrigatórios.');
+                isValid = false;
+            } else if (password !== confirmPassword) {
+                alert('As senhas não coincidem.');
+                isValid = false;
+            } else if (password.length < 8) {
+                alert('A senha deve ter pelo menos 8 caracteres.');
+                isValid = false;
+            }
+            
+            if (isValid) {
+                // Simulate account creation
+                alert('Conta criada com sucesso! Você será redirecionado para a página inicial.');
+                window.location.href = 'index.html';
+            }
+        });
+
+        // CPF mask
+        document.getElementById('cpf').addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, '');
+            if (value.length > 11) {
+                value = value.slice(0, 11);
+            }
+            
+            if (value.length > 9) {
+                value = value.replace(/^(\d{3})(\d{3})(\d{3})(\d{2}).*/, '$1.$2.$3-$4');
+            } else if (value.length > 6) {
+                value = value.replace(/^(\d{3})(\d{3})(\d{0,3}).*/, '$1.$2.$3');
+            } else if (value.length > 3) {
+                value = value.replace(/^(\d{3})(\d{0,3}).*/, '$1.$2');
+            }
+            
+            e.target.value = value;
+        });
+
+        // Phone mask
+        document.getElementById('phone').addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, '');
+            if (value.length > 11) {
+                value = value.slice(0, 11);
+            }
+            
+            if (value.length > 6) {
+                value = value.replace(/^(\d{2})(\d{5})(\d{0,4}).*/, '($1) $2-$3');
+            } else if (value.length > 2) {
+                value = value.replace(/^(\d{2})(\d{0,5}).*/, '($1) $2');
+            }
+            
+            e.target.value = value;
+        });
+    </script>
+</body>
+</html>
